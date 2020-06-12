@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="./img/CWtitle.ico">
+    <title>Control WIMO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+
+    <div class="container-fluid">
+        <div class="legend"></div>
+        <div class="row legend_">
+            <div class="col-sm-12">
+                <div class="col-sm-3">
+                    <p>MODULOS</p>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" nombre="COMISIONES" href="#">
+                                COMISIONES
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" nombre="POSPAGO" href="#">
+                                POSPAGO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" nombre="PREPAGO / CREDIWIMO" href="#">
+                                PREPAGO / CREDIWIMO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" nombre="SOPORTE PREPAGO" href="#">
+                                SOPORTE PREPAGO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" nombre="RECURSOS HUMANOS" href="#">
+                                RECURSOS HUMANOS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p>Menu 2</p>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   5</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p>Menu 3</p>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   5</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p>Menu 4</p>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                   5</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script>
+        $(".input").focusin(function() {
+            $(this).find("span").animate({
+                "opacity": "0"
+            }, 200);
+        });
+
+        $(".input").focusout(function() {
+            $(this).find("span").animate({
+                "opacity": "1"
+            }, 300);
+        });
+
+        $(".login").submit(function() {
+            $(this).find(".submit i").removeAttr('class').addClass("fa fa-check").css({
+                "color": "#fff"
+            });
+            $(".submit").css({
+                "background": "#2ecc71",
+                "border-color": "#2ecc71"
+            });
+            $(".feedback").show().animate({
+                "opacity": "1",
+                "bottom": "-80px"
+            }, 400);
+            $("input").css({
+                "border-color": "#2ecc71"
+
+            }, window.location.href = "plantilla.html");
+
+
+
+            return false;
+        });
+
+
+        $('.nav-link').click(function() {
+            localStorage.setItem('titulo', $(this).attr('nombre'));
+            window.location.href = "plantilla.html";
+        });
+    </script>
+
+    </body>
+
+</html>

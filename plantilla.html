@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="./img/CWtitle.ico">
+    <title>Control WIMO</title>
+    <link rel="stylesheet" href="./vistas/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="./css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./iconos/style.css">
+    <link rel="stylesheet" href="./css/stylos.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark" id="accordionSidebar">
+            <a id="accordionSidebar_" class="legend sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <h1 id="tiTulo" class="h3 mb-0 text-gray-800"></h1>
+                </div>
+            </a>
+            <div class="sidebar-heading">
+                Lista de registros
+            </div>
+            <hr class="sidebar-divider my-2">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Ventas</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Pagos</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Ventas de contado</span></a>
+            </li>
+
+            <br>
+            <div class="sidebar-heading">
+                Nuevo registro
+            </div>
+            <hr class="sidebar-divider my-2">
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Venta</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Pago</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Venta de contado</span></a>
+            </li>
+
+            <br>
+            <div class="sidebar-heading">
+                Herramientas
+            </div>
+            <hr class="sidebar-divider my-2">
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Resurtido</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Cortes diarios</span></a>
+            </li>
+
+
+
+
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content" class="sTop">
+                <nav class="navbar navbar-expand bg-white topbar static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3" style="background: white;">
+                        <i class="fa fa-bars"></i>
+                      </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chevron-circle-left"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div style="width: 100%;">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-5">
+                                <div class="recuadro"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <div class="recuadro"></div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-0"></div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="./js/sb-admin-2.js"></script>
+    <script>
+        // if (window.matchMedia("(min-width:768px)").matches) {
+        //     $('#accordionSidebar').css('width', '0rem');
+
+
+
+
+        // } else {
+        //     $('#accordionSidebar').css('width', '14rem');
+
+
+        // }
+
+        $('#tiTulo').html(localStorage.getItem('titulo'));
+    </script>
+
+</body>
+
+</html>
